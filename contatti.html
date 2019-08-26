@@ -107,86 +107,98 @@
             >
           </div>
         </div>
-        <div class="w-form">
-          <div class="kwes-form">
-            <form
-              method="POST"
-              action="https://kwes.io/api/foreign/forms/MThTmz5SYeq6oEVfrp1k"
-              id="email-form"
-              name="email-form"
-              data-name="Email Form"
-              class="w-clearfix"
-            >
-              <div class="columns-2 w-row">
-                <div class="column w-col w-col-6 w-col-small-6">
-                  <input
-                    type="text"
-                    class="text-field-2 w-input"
-                    maxlength="256"
-                    name="name"
-                    data-name="Name"
-                    placeholder="Nome"
-                    id="name"
-                  />
-                </div>
 
-                <div class="column-2 w-col w-col-6 w-col-small-6">
-                  <input
-                    type="email"
-                    class="text-field-3 w-input"
-                    maxlength="256"
-                    name="email"
-                    data-name="Email"
-                    placeholder="Email"
-                    id="email"
-                    required=""
-                  />
-                </div>
+        <div class="kwes-form">
+          <form
+            method="POST"
+            action="https://kwes.io/api/foreign/forms/MThTmz5SYeq6oEVfrp1k"
+          >
+            <label for="name">Your Name</label>
+            <input type="text" name="name" rules="required" />
+
+            <label for="email">Your Email</label>
+            <input type="email" name="email" rules="required|email|max:255" />
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="w-form">
+          <form
+            id="email-form"
+            name="email-form"
+            data-name="Email Form"
+            class="w-clearfix"
+          >
+            <div class="columns-2 w-row">
+              <div class="column w-col w-col-6 w-col-small-6">
+                <input
+                  type="text"
+                  class="text-field-2 w-input"
+                  maxlength="256"
+                  name="name"
+                  data-name="Name"
+                  placeholder="Nome"
+                  id="name"
+                />
               </div>
-              <textarea
-                placeholder="Messaggio"
-                maxlength="5000"
-                id="message"
-                name="message"
-                required=""
-                data-name="message"
-                class="textarea w-input"
-              ></textarea
-              ><input
-                type="submit"
-                value="Invia"
-                data-wait="Please wait..."
-                id="send"
-                class="submit-button w-button"
-              />
-            </form>
-            <div class="success-message w-form-done">
-              <div>Grazie.</div>
+
+              <div class="column-2 w-col w-col-6 w-col-small-6">
+                <input
+                  type="email"
+                  class="text-field-3 w-input"
+                  maxlength="256"
+                  name="email"
+                  data-name="Email"
+                  placeholder="Email"
+                  id="email"
+                  required=""
+                />
+              </div>
             </div>
-            <div class="error-message w-form-fail">
-              <div class="text-block">
-                Oops! Something went wrong while submitting the form.
-              </div>
+            <textarea
+              placeholder="Messaggio"
+              maxlength="5000"
+              id="message"
+              name="message"
+              required=""
+              data-name="message"
+              class="textarea w-input"
+            ></textarea
+            ><input
+              type="submit"
+              value="Invia"
+              data-wait="Please wait..."
+              id="send"
+              class="submit-button w-button"
+            />
+          </form>
+          <div class="success-message w-form-done">
+            <div>Grazie.</div>
+          </div>
+          <div class="error-message w-form-fail">
+            <div class="text-block">
+              Oops! Something went wrong while submitting the form.
             </div>
           </div>
         </div>
-
-        <img
-          src="images/wood.png"
-          width="1000"
-          srcset="
-            images/wood-p-500.png   500w,
-            images/wood-p-800.png   800w,
-            images/wood-p-1080.png 1080w,
-            images/wood-p-1600.png 1600w,
-            images/wood-p-2000.png 2000w,
-            images/wood.png        2023w
-          "
-          sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
-          alt=""
-          class="bg-image-chi-siamo"
-        />
       </div>
+
+      <img
+        src="images/wood.png"
+        width="1000"
+        srcset="
+          images/wood-p-500.png   500w,
+          images/wood-p-800.png   800w,
+          images/wood-p-1080.png 1080w,
+          images/wood-p-1600.png 1600w,
+          images/wood-p-2000.png 2000w,
+          images/wood.png        2023w
+        "
+        sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+        alt=""
+        class="bg-image-chi-siamo"
+      />
     </div>
     <div>
       <div class="footer w-container">
